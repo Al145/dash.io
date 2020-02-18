@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__list">
+        <a class="nav__user" href="#">
+          <img src="./images/profile.png" alt="profile">
+        </a>
+
+        <span class="nav__dots">
+          ...
+        </span>
+
+        <a href="#" class="nav__icon_1">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 512 512" width="48px">
+            <g>
+              <path class="nav__svg_1" d="m256 512c140.960938 0 256-115.050781 256-256 0-140.960938-115.050781-256-256-256-140.960938 0-256 115.050781-256 256 0 140.960938 115.050781 256 256 256zm-146.859375-84.367188c36.839844-41.320312 90.71875-65.632812 146.859375-65.632812s110.019531 24.3125 146.859375 65.632812c-39.527344 33.871094-90.84375 54.367188-146.859375 54.367188s-107.332031-20.496094-146.859375-54.367188zm-18.457031-186.632812c3.109375-34.523438 16.824218-66.035156 37.867187-91.234375l20.382813 20.382813 21.214844-21.214844-20.382813-20.382813c25.199219-21.042969 56.710937-34.757812 91.234375-37.867187v29.316406h30v-29.316406c34.523438 3.109375 66.035156 16.824218 91.234375 37.867187l-20.382813 20.382813 21.214844 21.214844 20.382813-20.382813c21.039062 25.199219 34.757812 56.710937 37.867187 91.234375h-29.316406v29.988281h29.308594c-3.265625 36.140625-18.234375 70.441407-42.4375 97.089844-37.378906-24.0625-80.410156-36.078125-122.871094-36.078125-42.371094 0-85.414062 11.964844-122.871094 36.078125-24.203125-26.648437-39.171875-60.941406-42.4375-97.078125h29.308594v-30zm165.316406-211c124.617188 0 226 101.382812 226 226 0 57.816406-21.832031 110.621094-57.675781 150.632812-6.605469-7.316406-13.722657-14.199218-21.265625-20.609374 31.269531-35.53125 48.941406-82.023438 48.941406-130.023438 0-107.636719-88.351562-196-196-196-107.636719 0-196 88.351562-196 196 0 48 17.671875 94.492188 48.941406 130.023438-7.542968 6.410156-14.660156 13.292968-21.265625 20.609374-35.84375-40.011718-57.675781-92.816406-57.675781-150.632812 0-124.617188 101.382812-226 226-226zm0 0" data-original="#000" data-old_color="#000" fill="#4d5052" />
+              <path class="nav__svg_1" d="m211 392h90v30h-90zm0 0" data-original="#000" data-old_color="#000" fill="#4d5052" />
+              <path class="nav__svg_1" d="m217.558594 279.398438c8.242187 13.527343 22.613281 21.601562 38.441406 21.601562 24.8125 0 45-20.1875 45-45 0-15.828125-8.074219-30.199219-21.601562-38.441406l-.773438-.472656-112.839844-51.296876 51.300782 112.835938zm46.863281-35.816407c4.132813 2.804688 6.578125 7.390625 6.578125 12.417969 0 8.269531-6.730469 15-15 15-5.027344 0-9.613281-2.445312-12.417969-6.578125l-17.367187-38.210937zm0 0" data-original="#000" data-old_color="#000" fill="#4d5052" />
+            </g>
+          </svg>
+          <p class="nav__text">
+            Board
+          </p>
+        </a>
+
+        <span class="nav__dots">
+          ...
+        </span>
+
+        <a href="#" class="nav__icon_2">
+          <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 512 512" height="48px" viewBox="0 0 512 512" width="48px">
+            <g>
+              <path class="nav__svg_2" d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+              <path class="nav__svg_2" d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+              <path class="nav__svg_2" d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+            </g>
+          </svg>
+          <p class="nav__text">
+            Projects
+          </p>
+        </a>
+
+        <span class="nav__dots">
+          ...
+        </span>
+
+        <a href="#" class="nav__icon_3">
+          <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="48px" height="48px">
+            <g>
+              <g>
+                <g>
+                  <path class="nav__svg_3" d="M504.008,223.961c-4.121-2.587-36.412-21.931-49.246-27.802l-15.903-38.392c4.725-12.695,13.752-48.308,15.164-54.482    c1.307-5.724-0.418-11.718-4.57-15.87l-24.868-24.867c-4.151-4.152-10.147-5.878-15.87-4.57    c-4.682,1.071-41.226,10.23-54.482,15.164L315.84,57.239c-5.618-12.28-24.386-43.807-27.802-49.246    c-3.121-4.973-8.581-7.992-14.453-7.992h-35.17c-5.872,0-11.332,3.019-14.454,7.992c-2.587,4.121-21.931,36.412-27.802,49.246    l-38.392,15.903c-12.695-4.725-48.308-13.752-54.482-15.164c-5.724-1.307-11.718,0.419-15.87,4.57L62.547,87.416    c-4.152,4.152-5.878,10.146-4.57,15.87c1.071,4.682,10.23,41.226,15.164,54.482L57.238,196.16    c-12.28,5.618-43.807,24.386-49.246,27.802C3.019,227.083,0,232.543,0,238.415v35.17c0,5.872,3.019,11.332,7.992,14.454    c4.121,2.587,36.412,21.931,49.246,27.802l15.903,38.392c-4.725,12.695-13.752,48.308-15.164,54.482    c-1.307,5.724,0.418,11.718,4.57,15.87l24.868,24.868c4.152,4.152,10.148,5.879,15.87,4.57    c4.682-1.071,41.226-10.23,54.482-15.164l38.392,15.903c5.618,12.28,24.386,43.807,27.802,49.246    c3.122,4.973,8.582,7.992,14.454,7.992h35.17c5.872,0,11.332-3.019,14.454-7.992c2.587-4.121,21.931-36.412,27.802-49.246    l38.392-15.903c12.695,4.725,48.308,13.752,54.482,15.164c5.726,1.31,11.719-0.418,15.87-4.57l24.868-24.868    c4.152-4.152,5.878-10.146,4.57-15.87c-1.071-4.682-10.23-41.226-15.164-54.482l15.903-38.392    c12.28-5.618,43.807-24.386,49.246-27.802c4.973-3.122,7.992-8.582,7.992-14.454v-35.17    C512,232.543,508.981,227.083,504.008,223.961z M256,367.605c-61.539,0-111.605-50.066-111.605-111.605    S194.461,144.396,256,144.396s111.605,50.066,111.605,111.605S317.539,367.605,256,367.605z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p class="nav__text">
+            Settings
+          </p>
+        </a>
+      </div>
+
+      <div class="nav__list">
+        <a href="#" class="nav__icon_4">
+          <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="48px" height="48px">
+            <g>
+              <g>
+                <g>
+                  <path class="nav__svg_4" d="M468.163,382.519c-53.672,53.673-126.692,76.484-196.817,68.454c62.607-3.678,120.956-29.796,165.673-74.513    C485.37,328.108,512,263.821,512,195.441c0-4.561-3.696-8.258-8.258-8.258s-8.258,3.697-8.258,8.258    c0,75.916-35.51,143.693-90.788,187.6c41.685-46.874,64.483-106.612,64.483-169.863c0-68.381-26.63-132.667-74.981-181.019    c-3.226-3.225-8.454-3.225-11.679,0s-3.225,8.454,0,11.678c45.233,45.232,70.144,105.372,70.144,169.341    c0,9.51-0.557,18.933-1.643,28.237c-3.509-62.896-29.662-121.537-74.559-166.434C328.107,26.628,263.821,0,195.441,0    c-4.562,0-8.258,3.697-8.258,8.258s3.696,8.258,8.258,8.258c75.902,0,143.659,35.5,187.568,90.761    c-46.871-41.667-106.595-64.455-169.83-64.455c-68.381,0-132.667,26.63-181.02,74.981c-3.225,3.225-3.225,8.454,0,11.678    c3.226,3.225,8.454,3.225,11.679,0C97.509,75.81,170.525,53,240.648,61.027c-62.605,3.679-120.951,29.797-165.667,74.512    C26.63,183.892,0,248.179,0,316.559c0,4.561,3.696,8.258,8.258,8.258s8.258-3.697,8.258-8.258    c0-75.909,35.505-143.678,90.776-187.586c-41.676,46.872-64.47,106.604-64.47,169.848c0,68.381,26.63,132.667,74.981,181.019    c1.613,1.612,3.727,2.419,5.84,2.419c2.113,0,4.227-0.806,5.84-2.419c3.225-3.225,3.225-8.454,0-11.678    C84.25,422.93,59.339,362.79,59.339,298.821c0-9.519,0.554-18.952,1.642-28.265c3.504,62.907,29.656,121.558,74.56,166.463    C183.893,485.372,248.179,512,316.559,512c4.562,0,8.258-3.697,8.258-8.258s-3.696-8.258-8.258-8.258    c-75.916,0-143.693-35.51-187.6-90.789c46.875,41.685,106.613,64.483,169.863,64.483c68.381,0,132.667-26.629,181.02-74.981    c3.225-3.225,3.225-8.454,0-11.678C476.616,379.294,471.388,379.294,468.163,382.519z M77.075,256    c0-98.66,80.265-178.925,178.925-178.925S434.925,157.34,434.925,256S354.66,434.925,256,434.925S77.075,354.66,77.075,256z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path class="nav__svg_4" d="M256,126.624c-28.489,0-55.515,9.086-78.158,26.277c-3.632,2.758-4.341,7.939-1.583,11.571    c2.757,3.632,7.939,4.343,11.571,1.583c19.746-14.991,43.319-22.916,68.17-22.916c62.232,0,112.86,50.629,112.86,112.86    S318.232,368.86,256,368.86S143.14,318.232,143.14,256c0-24.85,7.924-48.424,22.917-68.171c2.758-3.632,2.048-8.813-1.583-11.571    c-3.636-2.758-8.813-2.047-11.571,1.583c-17.191,22.645-26.278,49.671-26.278,78.159c0,71.339,58.038,129.376,129.376,129.376    S385.376,327.339,385.376,256S327.339,126.624,256,126.624z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle class="nav__svg_4" cx="462.452" cy="462.452" r="8.258" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle class="nav__svg_4" cx="495.484" cy="82.581" r="8.258" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle class="nav__svg_4" cx="462.452" cy="49.548" r="8.258" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle class="nav__svg_4" cx="49.548" cy="49.548" r="8.258" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p class="nav__text">
+            Update
+          </p>
+        </a>
+
+        <span class="nav__dots">
+          ...
+        </span>
+
+        <a href="#" class="nav__icon_5">
+          <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 511.996 511.996" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="48px" height="48px">
+            <g>
+              <g>
+                <g>
+                  <g>
+                    <path class="nav__svg_5" d="M349.85,62.196c-10.797-4.717-23.373,0.212-28.09,11.009c-4.717,10.797,0.212,23.373,11.009,28.09     c69.412,30.324,115.228,98.977,115.228,176.035c0,106.034-85.972,192-192,192c-106.042,0-192-85.958-192-192     c0-77.041,45.8-145.694,115.192-176.038c10.795-4.72,15.72-17.298,10.999-28.093c-4.72-10.795-17.298-15.72-28.093-10.999     C77.306,99.275,21.331,183.181,21.331,277.329c0,129.606,105.061,234.667,234.667,234.667     c129.592,0,234.667-105.068,234.667-234.667C490.665,183.159,434.667,99.249,349.85,62.196z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                    <path class="nav__svg_5" d="M255.989,234.667c11.782,0,21.333-9.551,21.333-21.333v-192C277.323,9.551,267.771,0,255.989,0     c-11.782,0-21.333,9.551-21.333,21.333v192C234.656,225.115,244.207,234.667,255.989,234.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p class="nav__text">
+            Logout
+          </p>
+        </a>
+      </div>
+    </nav>
+
+    <section class="content container">
+      <div class="content__header">
+        <div class="content__header_left">
+          <a href="#" class="content__undo"><img class="content__arrow_undo" src="./images/undo.png" alt="undo"></a>
+          <a href="#" class="content__dashboard">Dashboard</a>
+        </div>
+        <div class="content__header_right">
+          <a href="#"><img class="content__arrow_bottom" src="./images/bottom.png" alt="arrow bottom"></a>
+          <span class="content__chat">
+            <img src="./images/chat.png" alt="chat">
+          </span>
+          <select class="content__online" name="select">
+            <option value="value1" selected>5 user online</option>
+            <option value="value2">Value</option>
+            <option value="value3">Value</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="content__selects">
+        <div class="content__select_one">
+          <a href="#" class="content__select_text1">
+            Active Projects
+          </a>
+        </div>
+        <div class="content__select_two">
+          <a href="#" class="content__select_text2">
+            Messenger
+          </a>
+        </div>
+        <div class="content__select_search">
+          <input type="search" placeholder="Search Project, User, Task, etc..." class="content__select_input">
+        </div>
+      </div>
+
+      <div class="content__bottom">
+        <div class="content__list">
+          <div class="content__list_block_1">
+            <div class="content__list_search">
+              <input class="content__list_input" type="search" placeholder="Search a Project with Name, Task, User...">
+            </div>
+            <div class="content__block_1_right">
+              <select class="content__list_select" name="select">
+                <option value="value1" selected>New Project (descedning)</option>
+                <option value="value2">Value</option>
+              </select>
+              <a href="#" class="content__list_plus">
+                <img class="content__plus_img" src="./images/plus.png" alt="plus">
+              </a>
+            </div>
+        </div>
+
+        <div class="content__list_block_2">
+          <div class="content__list_left">
+            <span class="content__list_procent">23%</span>
+            <p class="content__list_text">
+              Create Contact Formular
+            </p>
+          </div>
+          <div class="content__list_right">
+            <button class="content__list_btn">
+              Worlda
+            </button>
+            <button class="content__list_loop">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px">
+                <g>
+                  <g>
+                    <g>
+                      <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" data-old_color="#000000" fill="#4D5052" class="content__svg_icon" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button class="content__list_arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                <g>
+                  <g>
+                    <g>
+                      <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">87%</span>
+              <p class="content__list_text">
+                Create Subpage PSD
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Panorama
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">83%</span>
+              <p class="content__list_text">
+                Layout & implementation in HTML & CSS
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Ebay Relaunch
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">23%</span>
+              <p class="content__list_text">
+                Lorem ipsum dolor sit amet, elitr, sed diam
+                nonumy eirmod tempor
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Panorama
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">98%</span>
+              <p class="content__list_text">
+                Create Contact Formular
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Worlda
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">23%</span>
+              <p class="content__list_text">
+                Create Contact Formular
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Worlda
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">98%</span>
+              <p class="content__list_text">
+                Create Contact Formular
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Worlda
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">23%</span>
+              <p class="content__list_text">
+                Create Contact Formular
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Worlda
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">23%</span>
+              <p class="content__list_text">
+                Create Contact Formular
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Worlda
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_2">
+            <div class="content__list_left">
+              <span class="content__list_procent">23%</span>
+              <p class="content__list_text">
+                Create Contact Formular
+              </p>
+            </div>
+            <div class="content__list_right">
+              <button class="content__list_btn">
+                Worlda
+              </button>
+              <button class="content__list_loop">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 512 512;" xml:space="preserve" width="13px" height="13px" class="content__loop_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="content__list_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 492 492;" xml:space="preserve" width="13px" height="13px" class="content__arrow_icon">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224    C491.996,136.902,489.204,130.046,484.132,124.986z" data-original="#000000" class="content__svg_icon" data-old_color="#000000" fill="#4D5052" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content__list_block_3">
+            <p class="content__list_archiv">
+              Project Archiv
+            </p>
+          </div>
+        </div>
+
+        <div class="content__right">
+          <div class="content__list_block_02">
+            <div class="content__list_left_02">
+              <img class="content__block_02_img" src="./images/icon1.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Mark P.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_022">
+              <img class="content__block_02_img" src="./images/icon2.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Marvin S.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_02">
+              <img class="content__block_02_img" src="./images/icon3.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Sebastian K.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_022">
+              <img class="content__block_02_img" src="./images/icon2.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Marvin S.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_02">
+              <img class="content__block_02_img" src="./images/icon1.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Mark P.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_022">
+              <img class="content__block_02_img" src="./images/icon3.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Sebastian K.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_02">
+              <img class="content__block_02_img" src="./images/icon2.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Mark P.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_022">
+              <img class="content__block_02_img" src="./images/icon1.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Mark P.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+
+          <div class="content__list_block_02">
+            <div class="content__list_left_02">
+              <img class="content__block_02_img" src="./images/icon1.png" alt="mark p">
+            </div>
+            <div class="content__list_right_02">
+              <p class="content__notif"><span class="content__notif_name">Mark P.</span> add an Image into Worlda</p>
+              <p class="content__ampm">Today, <span class="content__ampm_time">10:30</span> PM</p>
+            </div>
+          </div>
+          <div class="content__right_block_2">
+            <p class="content__list_archiv">
+              Project Archiv
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>
