@@ -1,0 +1,144 @@
+.nav {
+  background: url(../images/bg.jpg);
+  background-color: $c-nav;
+  height: 100vh;
+  width: 130px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 55;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &__user {
+    position: relative;
+  }
+  &__user:before {
+    content: "2";
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    background: $c-orange;
+    color: $c-white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__icon_1,
+  &__icon_2,
+  &__icon_3,
+  &__icon_4,
+  &__icon_5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: $c-svg;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__icon_1,
+  &__icon_5 {
+    color: $c-white;
+  }
+  &__icon_2:after {
+    content: "9";
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    background: $c-after;
+    color: $c-white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__icon_2:hover,
+  &__icon_3:hover,
+  &__icon_4:hover {
+    color: $c-white;
+  }
+  &__icon_1:before {
+    content: "";
+    height: 120%;
+    width: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: $c-orange;
+    position: absolute;
+    left: -40px;
+    top: -10px;
+  }
+  &__icon_2:before,
+  &__icon_3:before {
+    content: "";
+    height: 120%;
+    width: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: $c-svg;
+    position: absolute;
+    left: -33px;
+    top: -10px;
+    display: none;
+  }
+  &__svg_1,
+  &__svg_5 {
+    fill: $c-orange;
+  }
+  &__list &__icon_2:hover &__svg_2,
+  &__list &__icon_3:hover &__svg_3,
+  &__list &__icon_4:hover &__svg_4 {
+    fill: $c-orange;
+  }
+  &__list &__icon_2:hover:before,
+  &__list &__icon_3:hover:before {
+    background-color: $c-orange;
+    display: block;
+  }
+  &__list &__icon_2:hover:after {
+    background: $c-orange;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 390px;
+    margin-top: 30px;
+  }
+  &__list:last-child {
+    height: 155px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  &__icon_4:after {
+    content: "3";
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    background: $c-orange;
+    color: $c-white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__dots {
+    color: $c-svg;
+    font-size: 45px;
+    margin-top: -24px;
+  }
+  &__text {
+    margin-top: 3px;
+  }
+}
